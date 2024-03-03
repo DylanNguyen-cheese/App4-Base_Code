@@ -20,7 +20,8 @@ Brief Description of Goal of Code:
 The goal of this code is to produce a quick diagnosis to determine whether an indivdual is likely to be suffering from a COVID-19 or the flu. 
  
 Known Issues:
-None
+Cannot display results on Results page
+	
 Ignore this error message if you see it using the javaScript console: Error with Permissions-Policy header: Origin trial controlled feature not enabled: 'interest-cohort'.
 
 References:
@@ -58,6 +59,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 		var fluPercent = (flu_count/4)*100; //divides total flu count by four//
 		resultText.innerHTML = "Probability it is COVID =" + allergyPercent + "<br> Probability it is the flu =" + fluPercent; // changes what is between the <p id="results"> </p> tags with the innerHTML command like this:
 //
+	}
 
 </script>	
 
@@ -113,7 +115,7 @@ img, object{
     	<div id="content" class="w3-container">
         <p>Have you experienced loss of taste?</p>  <!--Asks user one of the questions for quick diagnosis-->
 		<a href="#two" onclick="COVIDAdd();" class="w3-btn w3-black"> Yes</a> <!--adds 1 to the total COVID count and brings user to next page-->
-		<a href="#two" onclick="fluAdd();" class="w3-btn w3-black"> No</a> <!--adds 1 to the total COVID count and brings user to next page-->
+		<a href="#two" onclick="fluAdd();" class="w3-btn w3-black"> No</a> <!--adds 1 to the total flu count and brings user to next page-->
     	</div>
 </div>
 

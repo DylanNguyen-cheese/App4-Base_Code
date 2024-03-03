@@ -56,7 +56,8 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 		var resultText = document.getElementById("results");
 		var COVIDPercent = (COVID_count/4)*100; //divides total COVID count by four//
 		var fluPercent = (flu_count/4)*100; //divides total flu count by four//
-		resultText.innerHTML = "Probability it is COVID =" + allergyPercent + "<br> Probability it is the flu =" + fluPercent;
+		resultText.innerHTML = "Probability it is COVID =" + allergyPercent + "<br> Probability it is the flu =" + fluPercent; // changes what is between the <p id="results"> </p> tags with the innerHTML command like this:
+//
 
 </script>	
 
@@ -111,8 +112,8 @@ img, object{
 	
     	<div id="content" class="w3-container">
         <p>Have you experienced loss of taste?</p>  <!--Asks user one of the questions for quick diagnosis-->
-		<a href="#two" onclick="COVIDAdd();" class="w3-btn w3-black"> Yes</a> <!--adds 1 to the total cold count and brings user to next page-->
-		<a href="#two" onclick="fluAdd();" class="w3-btn w3-black"> No</a> <!--adds 1 to the total cold count and brings user to next page-->
+		<a href="#two" onclick="COVIDAdd();" class="w3-btn w3-black"> Yes</a> <!--adds 1 to the total COVID count and brings user to next page-->
+		<a href="#two" onclick="fluAdd();" class="w3-btn w3-black"> No</a> <!--adds 1 to the total COVID count and brings user to next page-->
     	</div>
 </div>
 
@@ -123,8 +124,8 @@ img, object{
 	
 	<div id="content" class="w3-container">
 	<p>Have you experienced shortness of breath?</p> <!--Asks user one of the questions for quick diagnosis-->
-		<a href="#three" onclick="COVIDAdd();" class="w3-btn w3-black"> Yes</a> <!--adds 1 to the total cold count and brings user to next page-->
-		<a href="#three" onclick="fluAdd();" class="w3-btn w3-black"> No</a> <!--adds 1 to the total allergy count and brings user to next page-->
+		<a href="#three" onclick="COVIDAdd();" class="w3-btn w3-black"> Yes</a> <!--adds 1 to the total COVID count and brings user to next page-->
+		<a href="#three" onclick="fluAdd();" class="w3-btn w3-black"> No</a> <!--adds 1 to the total flu count and brings user to next page-->
 	</div>
 </div>	
 
@@ -135,8 +136,8 @@ img, object{
 	
 	<div id="content" class="w3-container">
 	<p>Have you experienced diarrhea?</p> <!--Asks user one of the questions for quick diagnosis-->
-		<a href="#four" onclick="COVIDAdd();" class="w3-btn w3-black"> Yes</a> <!--adds 1 to the total cold count and brings user to next page-->
-		<a href="#four" onclick="fluAdd();" class="w3-btn w3-black"> No</a> <!--adds 1 to the total allergy count and brings user to next page-->
+		<a href="#four" onclick="COVIDAdd();" class="w3-btn w3-black"> Yes</a> <!--adds 1 to the total COVID count and brings user to next page-->
+		<a href="#four" onclick="fluAdd();" class="w3-btn w3-black"> No</a> <!--adds 1 to the total flu count and brings user to next page-->
 	</div>
 </div>	
 
@@ -147,8 +148,8 @@ img, object{
 	
 	<div id="content" class="w3-container">
 	<p>Did your symptoms appear gradually or rapidly?</p> <!--Asks user one of the questions for quick diagnosis-->
-		<a href="#five" onclick="fluAdd();" class="w3-btn w3-black"> Rapidly</a> <!--adds 1 to the total allergy count and brings user to next page-->
-		<a href="#five" onclick="COVIDAdd();" class="w3-btn w3-black"> Gradually</a> <!--adds 1 to the total cold count and brings user to next page-->
+		<a href="#five" onclick="fluAdd();" class="w3-btn w3-black"> Rapidly</a> <!--adds 1 to the total flu count and brings user to next page-->
+		<a href="#five" onclick="COVIDAdd();" class="w3-btn w3-black"> Gradually</a> <!--adds 1 to the COVID cold count and brings user to next page-->
 	</div>
 </div>
 	

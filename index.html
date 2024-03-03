@@ -147,26 +147,26 @@ img, object{
 	</div>
 	
 	<div id="content" class="w3-container">
-	<p>Did your symptoms appear gradually or rapidly?</p> <!--Asks user one of the questions for quick diagnosis-->
-		<a href="#five" onclick="fluAdd();" class="w3-btn w3-black"> Rapidly</a> <!--adds 1 to the total flu count and brings user to next page-->
-		<a href="#five" onclick="COVIDAdd();" class="w3-btn w3-black"> Gradually</a> <!--adds 1 to the COVID cold count and brings user to next page-->
+	<p>Did your symptoms appear rapidly?</p> <!--Asks user one of the questions for quick diagnosis-->
+		<a href="#five" onclick="fluAdd();" class="w3-btn w3-black"> Yes</a> <!--adds 1 to the total flu count and brings user to next page-->
+		<a href="#five" onclick="COVIDAdd();" class="w3-btn w3-black"> No</a> <!--adds 1 to the COVID cold count and brings user to next page-->
 	</div>
 </div>
 	
-<div class="page" id="five"> <!--Added a page for the results to be displayed--> 
-	<div id="header" class="w3-container w3-flat-carrot"> <!--creates orange header-->
-		<h1>Results</h1> <!--adds text to orange header-->
+<div class="page" id="five">
+	<div class="w3-container w3-flat-carrot"> <!--creates orange header-->
+		<h1>Results Page</h1> <!--adds text to orange header-->
 	</div>
 	
 	<div id="content" class="w3-container">
-		<button onclick="showResults();">Results</button> 
-		<p id="Results"></p>
+		<a onclick="results();" class="w3-btn w3-black">Results</a>
+		<p id="results"></p>
 	</div>
 </div>
 
 <footer class="w3-bottom w3-container w3-flat-carrot">
 	<p>DIY!</p>
 </footer>
-	
+
 </body>
-</html>	
+</html>
